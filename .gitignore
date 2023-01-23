@@ -5,3 +5,4 @@
 *.txt
 *.ipynb
 data/
+__pycache__/
