@@ -1,0 +1,11 @@
+.filter_div_class {
+    width:20%;
+    background-color:beige;
+    float: left;
+}
+
+.graph_div_class {
+    width:80%;
+    background-color: pink;
+    float: right;
+}

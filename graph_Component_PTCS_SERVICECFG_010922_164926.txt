@@ -1,0 +1,165 @@
+// A PeopleSoft Object Explorer
+digraph "PSFT Explorer" {
+	node [color="#61c2c5" fontname="Helvetica,Arial,sans-serif" fontsize=9]
+	edge [arrowsize=0.5 weight=1]
+	center=True rankdir=LR ranksep=1.5
+	subgraph cluster_Component {
+		label=Component
+		node [fontsize=7 group=Component rank=same shape=box3d]
+		node [class=Component]
+		component_PTCS_SERVICECFG [label=PTCS_SERVICECFG id=component_PTCS_SERVICECFG]
+	}
+	subgraph cluster_Page {
+		label=Page
+		node [group=Page shape=component]
+		node [class=Page]
+		page_PTCS_MENUCFG [label=PTCS_MENUCFG id=page_PTCS_MENUCFG]
+		node [class=Page]
+		page_PTCS_SERVICECFG [label=PTCS_SERVICECFG id=page_PTCS_SERVICECFG]
+		node [class=Page]
+		page_PTCS_SVCCFG_RA [label=PTCS_SVCCFG_RA id=page_PTCS_SVCCFG_RA]
+	}
+	subgraph cluster_SubPage {
+		label=SubPage
+		node [group=SubPage shape=rectangle]
+		node [class=SubPage]
+		page_PTCS_MENUCFGOPT [label=PTCS_MENUCFGOPT id=page_PTCS_MENUCFGOPT]
+		node [class=SubPage]
+		page_PTCS_MENULAYOUT [label=PTCS_MENULAYOUT id=page_PTCS_MENULAYOUT]
+		node [class=SubPage]
+		page_PTCS_MENUCOPY [label=PTCS_MENUCOPY id=page_PTCS_MENUCOPY]
+		node [class=SubPage]
+		page_PTCS_SVCCFGCG_SP [label=PTCS_SVCCFGCG_SP id=page_PTCS_SVCCFGCG_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFGCRC_SEC [label=PTCS_SVCCFGCRC_SEC id=page_PTCS_SVCCFGCRC_SEC]
+		node [class=SubPage]
+		page_PTCS_SVCCFGPG_SP [label=PTCS_SVCCFGPG_SP id=page_PTCS_SVCCFGPG_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFGPRC_SEC [label=PTCS_SVCCFGPRC_SEC id=page_PTCS_SVCCFGPRC_SEC]
+		node [class=SubPage]
+		page_PTCS_PGLTPRMT_SEC [label=PTCS_PGLTPRMT_SEC id=page_PTCS_PGLTPRMT_SEC]
+		node [class=SubPage]
+		page_PTCS_SVCCFG_CFG_SP [label=PTCS_SVCCFG_CFG_SP id=page_PTCS_SVCCFG_CFG_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFG_HDR_SP [label=PTCS_SVCCFG_HDR_SP id=page_PTCS_SVCCFG_HDR_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFG_MPM_SP [label=PTCS_SVCCFG_MPM_SP id=page_PTCS_SVCCFG_MPM_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFG_CFG_SP [label=PTCS_SVCCFG_CFG_SP id=page_PTCS_SVCCFG_CFG_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFG_HDR_SP [label=PTCS_SVCCFG_HDR_SP id=page_PTCS_SVCCFG_HDR_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFG_MPM_SP [label=PTCS_SVCCFG_MPM_SP id=page_PTCS_SVCCFG_MPM_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFG_OPN_SP [label=PTCS_SVCCFG_OPN_SP id=page_PTCS_SVCCFG_OPN_SP]
+		node [class=SubPage]
+		page_PTCS_PGLTPRMT_SEC [label=PTCS_PGLTPRMT_SEC id=page_PTCS_PGLTPRMT_SEC]
+		node [class=SubPage]
+		page_PTCS_SVCCFG_CFG_SP [label=PTCS_SVCCFG_CFG_SP id=page_PTCS_SVCCFG_CFG_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFG_HDR_SP [label=PTCS_SVCCFG_HDR_SP id=page_PTCS_SVCCFG_HDR_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFG_MPM_SP [label=PTCS_SVCCFG_MPM_SP id=page_PTCS_SVCCFG_MPM_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFG_CFG_SP [label=PTCS_SVCCFG_CFG_SP id=page_PTCS_SVCCFG_CFG_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFG_HDR_SP [label=PTCS_SVCCFG_HDR_SP id=page_PTCS_SVCCFG_HDR_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFG_MPM_SP [label=PTCS_SVCCFG_MPM_SP id=page_PTCS_SVCCFG_MPM_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFGCG_SP [label=PTCS_SVCCFGCG_SP id=page_PTCS_SVCCFGCG_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFGCRA_SEC [label=PTCS_SVCCFGCRA_SEC id=page_PTCS_SVCCFGCRA_SEC]
+		node [class=SubPage]
+		page_PTCS_SVCCFGPG_SP [label=PTCS_SVCCFGPG_SP id=page_PTCS_SVCCFGPG_SP]
+		node [class=SubPage]
+		page_PTCS_SVCCFGPRA_SEC [label=PTCS_SVCCFGPRA_SEC id=page_PTCS_SVCCFGPRA_SEC]
+	}
+	subgraph cluster_Record {
+		label=Record
+		node [group=Record shape=cylinder]
+		node [class=Record]
+		"recname_ " [label=" " id="recname_ "]
+		node [class=Record]
+		recname_PSPGMODEL [label=PSPGMODEL id=recname_PSPGMODEL]
+		node [class=Record]
+		recname_PSPTCS_MENU_TBL [label=PSPTCS_MENU_TBL id=recname_PSPTCS_MENU_TBL]
+		node [class=Record]
+		recname_PSPTCS_SRVCFG [label=PSPTCS_SRVCFG id=recname_PSPTCS_SRVCFG]
+		node [class=Record]
+		recname_PTCS_MENUCFGWRK [label=PTCS_MENUCFGWRK id=recname_PTCS_MENUCFGWRK]
+		node [class=Record]
+		recname_PTCS_MENU_PGVW [label=PTCS_MENU_PGVW id=recname_PTCS_MENU_PGVW]
+		node [class=Record]
+		recname_PTCS_SERVICEWRK [label=PTCS_SERVICEWRK id=recname_PTCS_SERVICEWRK]
+		node [class=Record]
+		recname_PTCS_SRVCFG_WRK [label=PTCS_SRVCFG_WRK id=recname_PTCS_SRVCFG_WRK]
+		node [class=Record]
+		"recname_ " [label=" " id="recname_ "]
+		node [class=Record]
+		recname_PSPTCS_SRVCFG [label=PSPTCS_SRVCFG id=recname_PSPTCS_SRVCFG]
+		node [class=Record]
+		recname_PTCS_SRVCFG_WRK [label=PTCS_SRVCFG_WRK id=recname_PTCS_SRVCFG_WRK]
+		node [class=Record]
+		recname_PTCS_SVCCRC_VW [label=PTCS_SVCCRC_VW id=recname_PTCS_SVCCRC_VW]
+		node [class=Record]
+		recname_PTCS_SVCPRC_VW [label=PTCS_SVCPRC_VW id=recname_PTCS_SVCPRC_VW]
+		node [class=Record]
+		"recname_ " [label=" " id="recname_ "]
+		node [class=Record]
+		recname_PSPTCS_SRVCFG [label=PSPTCS_SRVCFG id=recname_PSPTCS_SRVCFG]
+		node [class=Record]
+		recname_PTCS_SRVCFG_WRK [label=PTCS_SRVCFG_WRK id=recname_PTCS_SRVCFG_WRK]
+		node [class=Record]
+		recname_PTCS_SVCCRA_VW [label=PTCS_SVCCRA_VW id=recname_PTCS_SVCCRA_VW]
+		node [class=Record]
+		recname_PTCS_SVCPRA_VW [label=PTCS_SVCPRA_VW id=recname_PTCS_SVCPRA_VW]
+	}
+	component_PTCS_SERVICECFG -> page_PTCS_MENUCFG
+	component_PTCS_SERVICECFG -> page_PTCS_SERVICECFG
+	component_PTCS_SERVICECFG -> page_PTCS_SVCCFG_RA
+	page_PTCS_MENUCFG -> page_PTCS_MENUCFGOPT
+	page_PTCS_MENUCFG -> page_PTCS_MENULAYOUT
+	page_PTCS_MENULAYOUT -> page_PTCS_MENUCOPY
+	page_PTCS_SERVICECFG -> page_PTCS_SVCCFGCG_SP
+	page_PTCS_SERVICECFG -> page_PTCS_SVCCFGCRC_SEC
+	page_PTCS_SERVICECFG -> page_PTCS_SVCCFGPG_SP
+	page_PTCS_SERVICECFG -> page_PTCS_SVCCFGPRC_SEC
+	page_PTCS_SVCCFGCG_SP -> page_PTCS_PGLTPRMT_SEC
+	page_PTCS_SVCCFGCRA_SEC -> page_PTCS_SVCCFG_CFG_SP
+	page_PTCS_SVCCFGCRA_SEC -> page_PTCS_SVCCFG_HDR_SP
+	page_PTCS_SVCCFGCRA_SEC -> page_PTCS_SVCCFG_MPM_SP
+	page_PTCS_SVCCFGCRC_SEC -> page_PTCS_SVCCFG_CFG_SP
+	page_PTCS_SVCCFGCRC_SEC -> page_PTCS_SVCCFG_HDR_SP
+	page_PTCS_SVCCFGCRC_SEC -> page_PTCS_SVCCFG_MPM_SP
+	page_PTCS_SVCCFGCRC_SEC -> page_PTCS_SVCCFG_OPN_SP
+	page_PTCS_SVCCFGPG_SP -> page_PTCS_PGLTPRMT_SEC
+	page_PTCS_SVCCFGPRA_SEC -> page_PTCS_SVCCFG_CFG_SP
+	page_PTCS_SVCCFGPRA_SEC -> page_PTCS_SVCCFG_HDR_SP
+	page_PTCS_SVCCFGPRA_SEC -> page_PTCS_SVCCFG_MPM_SP
+	page_PTCS_SVCCFGPRC_SEC -> page_PTCS_SVCCFG_CFG_SP
+	page_PTCS_SVCCFGPRC_SEC -> page_PTCS_SVCCFG_HDR_SP
+	page_PTCS_SVCCFGPRC_SEC -> page_PTCS_SVCCFG_MPM_SP
+	page_PTCS_SVCCFG_RA -> page_PTCS_SVCCFGCG_SP
+	page_PTCS_SVCCFG_RA -> page_PTCS_SVCCFGCRA_SEC
+	page_PTCS_SVCCFG_RA -> page_PTCS_SVCCFGPG_SP
+	page_PTCS_SVCCFG_RA -> page_PTCS_SVCCFGPRA_SEC
+	page_PTCS_MENUCFG -> "recname_ "
+	page_PTCS_MENUCFG -> recname_PSPGMODEL
+	page_PTCS_MENUCFG -> recname_PSPTCS_MENU_TBL
+	page_PTCS_MENUCFG -> recname_PSPTCS_SRVCFG
+	page_PTCS_MENUCFG -> recname_PTCS_MENUCFGWRK
+	page_PTCS_MENUCFG -> recname_PTCS_MENU_PGVW
+	page_PTCS_MENUCFG -> recname_PTCS_SERVICEWRK
+	page_PTCS_MENUCFG -> recname_PTCS_SRVCFG_WRK
+	page_PTCS_SERVICECFG -> "recname_ "
+	page_PTCS_SERVICECFG -> recname_PSPTCS_SRVCFG
+	page_PTCS_SERVICECFG -> recname_PTCS_SRVCFG_WRK
+	page_PTCS_SERVICECFG -> recname_PTCS_SVCCRC_VW
+	page_PTCS_SERVICECFG -> recname_PTCS_SVCPRC_VW
+	page_PTCS_SVCCFG_RA -> "recname_ "
+	page_PTCS_SVCCFG_RA -> recname_PSPTCS_SRVCFG
+	page_PTCS_SVCCFG_RA -> recname_PTCS_SRVCFG_WRK
+	page_PTCS_SVCCFG_RA -> recname_PTCS_SVCCRA_VW
+	page_PTCS_SVCCFG_RA -> recname_PTCS_SVCPRA_VW
+}

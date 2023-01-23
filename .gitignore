@@ -1,0 +1,7 @@
+*.csv
+*.code-workspace
+*.png
+*.svg
+*.txt
+*.ipynb
+data/
