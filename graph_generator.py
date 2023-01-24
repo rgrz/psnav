@@ -49,7 +49,7 @@ def matching_lines(lines, pattern):
 
 #     matching = matching_lines(lines, '[')
 
-
+ 
 def parse_appdesigner_report(path, filename, extension):
     global file_digest, file_digest_flag
     p = os.path.join('.', path, ''.join(filename+ '.' + extension))
